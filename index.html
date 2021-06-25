@@ -9,19 +9,19 @@
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
    <style>
        body{
-           background-color: gray;
+           background-color: lightgray;
        }
        .form-control{
             border: 1px solid black !important;
         }
         .userInfo{
-            color: white;
+            color: black;
             font-size: 16px;
             font-weight: 600;
             font-family:  'Times New Roman', Times, serif;
         }
         .headingOne{
-            color: white;
+            color: black;
         }
         .userNameErr{
             color: rgb(146, 6, 6);
@@ -36,7 +36,15 @@
             border: 1px solid red !important;
         }
         .boxS{
-            border: 1px solid rgb(2, 158, 23) !important;
+            border: 1px solid rgb(179, 2, 155) !important;
+        }
+        .box{
+            min-height: 20px;
+            min-width: 20px;
+            border: 1px solid yellow;
+            text-align: center;
+            background-color: black;
+            color: white;
         }
    </style>
 </head>
@@ -52,14 +60,20 @@
                     <div class="userNameErr" style="display: none;">Name is invalid</div>
                 </div>
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label userInfo">Email address</label>
-                  <input type="email" class="form-control form-control-sm" id="email" aria-describedby="emailHelp">
-                  <div class="userEmailErr" style="display: none;">Email is invalid</div>
+                    <label for="exampleInputEmail1" class="form-label userInfo">Email address</label>
+                    <input type="email" class="form-control form-control-sm" id="email" aria-describedby="emailHelp">
+                    <div class="userEmailErr" style="display: none;">Email is invalid</div>
                 </div>
                 <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label userInfo">Password</label>
-                  <input type="password" class="form-control form-control-sm" id="password">
-                  <div class="userPasswordErr" style="display: none;">Password is invalid</div>
+                    <label for="exampleInputPassword1" class="form-label userInfo">Password</label>
+                    <input type="password" class="form-control form-control-sm" id="password">
+                    <div class="userPasswordErr" style="display: none;">Password is invalid</div>
+                    <div class="col-md-4 float-end m-3">
+                        <!-- <p class="gnPassInput box"></p> -->
+                        <input type="text" class="gnPassInput form-control form-control-sm">
+                        <a type="button" class="btn btn-primary btn-sm m-1 copyPwBtn">Copy Password</a>
+                        <a type="submit" class="btn btn-primary btn-sm  gnPwBtn">Generate Password</a>
+                    </div>
                 </div>
               </form>
            </div>
