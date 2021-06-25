@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular expression</title>
+    <!-- CSS only -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+   <style>
+       body{
+           background-color: gray;
+       }
+       .form-control{
+            border: 1px solid black !important;
+        }
+        .userInfo{
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            font-family:  'Times New Roman', Times, serif;
+        }
+        .headingOne{
+            color: white;
+        }
+        .userNameErr{
+            color: rgb(146, 6, 6);
+        }
+        .userPasswordErr{
+            color: rgb(146, 6, 6);
+        }
+        .userEmailErr{
+            color: rgb(146, 6, 6);
+        }
+        .boxE{
+            border: 1px solid red !important;
+        }
+        .boxS{
+            border: 1px solid rgb(2, 158, 23) !important;
+        }
+   </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+           <div class="col-md-6">
+            <h1 class="mb-5 headingOne">Regular Expression Project</h1>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label userInfo">User Name</label>
+                    <input type="text" class="form-control form-control-sm" id="user_name" aria-describedby="emailHelp">
+                    <div class="userNameErr" style="display: none;">Name is invalid</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label userInfo">Email address</label>
+                  <input type="email" class="form-control form-control-sm" id="email" aria-describedby="emailHelp">
+                  <div class="userEmailErr" style="display: none;">Email is invalid</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label userInfo">Password</label>
+                  <input type="password" class="form-control form-control-sm" id="password">
+                  <div class="userPasswordErr" style="display: none;">Password is invalid</div>
+                </div>
+              </form>
+           </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
