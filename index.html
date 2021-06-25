@@ -38,14 +38,7 @@
         .boxS{
             border: 1px solid rgb(179, 2, 155) !important;
         }
-        .box{
-            min-height: 20px;
-            min-width: 20px;
-            border: 1px solid yellow;
-            text-align: center;
-            background-color: black;
-            color: white;
-        }
+        
    </style>
 </head>
 <body>
@@ -69,10 +62,9 @@
                     <input type="password" class="form-control form-control-sm" id="password">
                     <div class="userPasswordErr" style="display: none;">Password is invalid</div>
                     <div class="col-md-4 float-end m-3">
-                        <!-- <p class="gnPassInput box"></p> -->
                         <input type="text" class="gnPassInput form-control form-control-sm">
-                        <a type="button" class="btn btn-primary btn-sm m-1 copyPwBtn">Copy Password</a>
-                        <a type="submit" class="btn btn-primary btn-sm  gnPwBtn">Generate Password</a>
+                        <a style="display: none;" type="button" class="btn btn-primary btn-sm m-1 copyPwBtn">Copy Password</a>
+                        <a type="submit" class="btn btn-primary btn-sm m-1 gnPwBtn">Generate Password</a>
                     </div>
                 </div>
               </form>

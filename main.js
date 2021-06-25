@@ -148,11 +148,12 @@ const UI={
     gnPwBtnElm.addEventListener('click',(e)=>{
        e.preventDefault()
        gnPwInputElm.setAttribute('value',data.random_password_generate(16,8))
+       copyPwBtnElm.style.display=''
     })
-    copyPwBtnElm.onclick=function(){
+    copyPwBtnElm.addEventListener('click',()=>{
        gnPwInputElm.select()
        document.execCommand('Copy')
-    }
+    })
   },
   init(){
      this.allEventListener()
