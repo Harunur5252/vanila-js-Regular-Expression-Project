@@ -26,6 +26,9 @@
         .userNameErr{
             color: rgb(146, 6, 6);
         }
+        .userMobileNoErr{
+            color: rgb(146, 6, 6);
+        }
         .userPasswordErr{
             color: rgb(146, 6, 6);
         }
@@ -48,9 +51,14 @@
             <h1 class="mb-5 headingOne">Regular Expression Project</h1>
             <form>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label userInfo">User Name</label>
-                    <input type="text" class="form-control form-control-sm" id="user_name" aria-describedby="emailHelp">
+                    <label for="user_name" class="form-label userInfo">User Name</label>
+                    <input type="text" class="form-control form-control-sm" id="user_name" aria-describedby="user_name">
                     <div class="userNameErr" style="display: none;">Name is invalid</div>
+                </div>
+                <div class="mb-3">
+                    <label for="mobile_no" class="form-label userInfo">Mobile Number</label>
+                    <input type="text" class="form-control form-control-sm" id="mobile_no" aria-describedby="mobile_no">
+                    <div class="userMobileNoErr" style="display: none;">Mobile no. is invalid</div>
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label userInfo">Email address</label>
