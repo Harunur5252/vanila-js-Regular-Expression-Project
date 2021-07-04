@@ -1,0 +1,33 @@
+body{
+    background-color: lightgray;
+}
+.form-control{
+     border: 1px solid black !important;
+ }
+ .userInfo{
+     color: black;
+     font-size: 16px;
+     font-weight: 600;
+     font-family:  'Times New Roman', Times, serif;
+ }
+ .headingOne{
+     color: black;
+ }
+ .userNameErr{
+     color: rgb(146, 6, 6);
+ }
+ .userMobileNoErr{
+     color: rgb(146, 6, 6);
+ }
+ .userPasswordErr{
+     color: rgb(146, 6, 6);
+ }
+ .userEmailErr{
+     color: rgb(146, 6, 6);
+ }
+ .boxE{
+     border: 1px solid red !important;
+ }
+ .boxS{
+     border: 1px solid rgb(179, 2, 155) !important;
+ }

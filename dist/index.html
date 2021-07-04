@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular expression</title>
+    <!-- CSS only -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+   <link rel="stylesheet" href="/src/styles/style.css">
+<script defer src="main.js"></script></head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+           <div class="col-md-6">
+            <h1 class="mb-5 headingOne">Regular Expression Project</h1>
+            <form>
+                <div class="mb-3">
+                    <label for="user_name" class="form-label userInfo">User Name</label>
+                    <input type="text" class="form-control form-control-sm" id="user_name" aria-describedby="user_name">
+                    <div class="userNameErr" style="display: none;">Name is invalid</div>
+                </div>
+                <div class="mb-3">
+                    <label for="mobile_no" class="form-label userInfo">Mobile Number</label>
+                    <input type="text" class="form-control form-control-sm" id="mobile_no" aria-describedby="mobile_no">
+                    <div class="userMobileNoErr" style="display: none;">Mobile no. is invalid</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label userInfo">Email address</label>
+                    <input type="email" class="form-control form-control-sm" id="email" aria-describedby="emailHelp">
+                    <div class="userEmailErr" style="display: none;">Email is invalid</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label userInfo">Password</label>
+                    <input type="password" class="form-control form-control-sm" id="password">
+                    <div class="userPasswordErr" style="display: none;">Password is invalid</div>
+                    <div class="col-md-4 float-end m-3">
+                        <input type="text" class="gnPassInput form-control form-control-sm">
+                        <a style="display: none;" type="button" class="btn btn-primary btn-sm m-1 copyPwBtn">Copy Password</a>
+                        <a type="submit" class="btn btn-primary btn-sm m-1 gnPwBtn">Generate Password</a>
+                    </div>
+                </div>
+              </form>
+           </div>
+        </div>
+    </div>
+    <!-- <script src="main.js"></script> -->
+</body>
+</html>
