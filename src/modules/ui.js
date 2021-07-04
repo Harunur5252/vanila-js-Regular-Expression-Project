@@ -1,8 +1,7 @@
-import Data from "./data";
+import data from "./data";
 
-const data = new Data()
 class UI{
-   constructor(){
+    constructor(){
 
     }
     loadAllSelectors(){
@@ -150,13 +149,12 @@ class UI{
         document.execCommand('Copy')
         })
     }
-    static init(){
+    init(){
         ui.allEventListener()
     }
 }
 
 const ui = new UI()
-
-export default UI
+export default ui
 
 

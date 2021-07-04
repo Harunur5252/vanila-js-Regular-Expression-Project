@@ -1,6 +1,6 @@
-import UI from "./ui"
+import ui from "./ui"
 
-const ui = new UI()
+
 class Data{
    constructor(){
 
@@ -54,4 +54,7 @@ class Data{
    }
 }
 
-export default Data
+const data = new Data()
+export default data
+
+
