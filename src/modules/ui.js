@@ -24,7 +24,7 @@ class UI{
     matchUserNameWithRegex(){
         const {
         userNameElm,userNameErrElm
-        }=ui.loadAllSelectors();
+        }=this.loadAllSelectors();
         userNameErrElm.style.display='none';
         userNameElm.classList.add('boxS');
         userNameElm.classList.remove('boxE');
@@ -32,7 +32,7 @@ class UI{
     notMatchUserNameWithRegex(){
         const {
         userNameElm,userNameErrElm
-        }=ui.loadAllSelectors();
+        }=this.loadAllSelectors();
         userNameErrElm.style.display='block';
         userNameElm.classList.add('boxE');
         userNameElm.classList.remove('boxS');
@@ -40,14 +40,14 @@ class UI{
     removeUserNameErrAndErrClass(){
         const {
         userNameElm,userNameErrElm
-        }=ui.loadAllSelectors();
+        }=this.loadAllSelectors();
         userNameElm.classList.remove('boxE');
         userNameErrElm.style.display='none';
     }
     matchUserMobileNoWithRegex(){
         const {
         userMobileNoElm,userMobileNoErrElm
-        }=ui.loadAllSelectors();
+        }=this.loadAllSelectors();
         userMobileNoErrElm.style.display='none';
         userMobileNoElm.classList.add('boxS');
         userMobileNoElm.classList.remove('boxE');
@@ -55,7 +55,7 @@ class UI{
     notMatchUserMobileNoWithRegex(){
         const {
         userMobileNoElm,userMobileNoErrElm
-        }=ui.loadAllSelectors();
+        }=this.loadAllSelectors();
         userMobileNoErrElm.style.display='block';
         userMobileNoElm.classList.add('boxE');
         userMobileNoElm.classList.remove('boxS');
@@ -63,14 +63,14 @@ class UI{
     removeUserMobileNoErrAndErrClass(){
         const {
         userMobileNoElm,userMobileNoErrElm
-        }=ui.loadAllSelectors();
+        }=this.loadAllSelectors();
         userMobileNoElm.classList.remove('boxE');
         userMobileNoErrElm.style.display='none';
     }
     matchUserEmailWithRegex(){
         const {
         userEmailElm,userEmailErrElm
-        }=ui.loadAllSelectors();
+        }=this.loadAllSelectors();
         userEmailErrElm.style.display='none';
         userEmailElm.classList.add('boxS');
         userEmailElm.classList.remove('boxE');
@@ -78,7 +78,7 @@ class UI{
     notMatchUserEmailWithRegex(){
         const {
         userEmailElm,userEmailErrElm
-        }=ui.loadAllSelectors();
+        }=this.loadAllSelectors();
         userEmailErrElm.style.display='block';
         userEmailElm.classList.add('boxE');
         userEmailElm.classList.remove('boxS');
@@ -86,14 +86,14 @@ class UI{
     removeUserEmailErrAndErrClass(){
         const {
         userEmailElm,userEmailErrElm
-        }=ui.loadAllSelectors();
+        }=this.loadAllSelectors();
         userEmailElm.classList.remove('boxE');
         userEmailErrElm.style.display='none';
     }
     matchUserPasswordWithRegex(){
         const {
         userPasswordElm,userPasswordErrElm
-        }=ui.loadAllSelectors();
+        }=this.loadAllSelectors();
         userPasswordErrElm.style.display='none';
         userPasswordElm.classList.add('boxS');
         userPasswordElm.classList.remove('boxE');
@@ -101,7 +101,7 @@ class UI{
     notMatchUserPasswordWithRegex(){
         const {
         userPasswordElm,userPasswordErrElm
-        }=ui.loadAllSelectors();
+        }=this.loadAllSelectors();
         userPasswordErrElm.style.display='block';
         userPasswordElm.classList.add('boxE');
         userPasswordElm.classList.remove('boxS');
@@ -109,14 +109,14 @@ class UI{
     removeUserPasswordErrAndErrClass(){
         const {
         userPasswordElm,userPasswordErrElm
-        }=ui.loadAllSelectors();
+        }=this.loadAllSelectors();
         userPasswordElm.classList.remove('boxE');
         userPasswordErrElm.style.display='none';
     }
     allEventListener(){
         const {
         userNameElm,userEmailElm,userPasswordElm,gnPwInputElm,gnPwBtnElm,copyPwBtnElm,userMobileNoElm
-        }=ui.loadAllSelectors();
+        }=this.loadAllSelectors();
         userNameElm.addEventListener('keyup',e=>{
             const userNameInput = e.target.value;
             const userNameRegex = /[a-z\_\-]{4,10}[\D]?/gi; // [a-z]{4,5}\_?\-?[\D]
@@ -150,7 +150,7 @@ class UI{
         })
     }
     init(){
-        ui.allEventListener()
+        this.allEventListener()
     }
 }
 
